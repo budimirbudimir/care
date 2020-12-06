@@ -81,8 +81,10 @@ header .logo a {
 	padding: 0;
 	border: none;
 	outline: none;
-   width: 64px;
+   /* width: 64px; */
    height: 18px;
+   font-size: 1.5em;
+   font-weight: 700;
 }
 
 /* header social */
@@ -258,13 +260,23 @@ ul.nav li.current button { color: #fff; }
    margin-top: 30px;
    margin-bottom: 54px;
 }
+#features .row.feature {
+  width: 25%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
 #features .right {
-   padding-left: 32px;
-   float: right;
+   padding: 10px;
+   float: none;
+   display: block;
+   width: auto;
 }
 #features .left {
-   padding-right: 32px;
-   float: left;
+   padding: 10px;
+   float: none;
+   display: block;
+   width: auto;
 }
 #features h3 {
    font: bold 16px/24px 'Montserrat', sans-serif;

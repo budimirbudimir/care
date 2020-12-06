@@ -1,13 +1,13 @@
-headline: The perfect template to showcase your awesome product and service.
+headline: Krafft Institut
 
-body: Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
+body: Institut für Wirtschafts- und Sozialwissenschaftliche Bildung Prof. Dr. Dietmar Krafft e.V.
 
 button1:
-  label: Free Trial
-  to: '/#'
+  label: Learn More
+  to: '/#about'
 
 button2:
-  label: Learn More
-  to: '/#features'
+  label: Contact Us
+  to: '/#contact'
 
-image: images/hero-image.png
+image: images/castle.jpeg
