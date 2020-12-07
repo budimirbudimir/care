@@ -213,16 +213,20 @@
       margin-bottom: 60px;
    }
    #features .right {
-      padding-left: 30px;
+      /* padding-left: 30px; */
       float: none;
    }
    #features .left {
-      padding-right: 30px;
+      /* padding-right: 30px; */
       float: none;
    }
    #features h3 { text-align: center; }
    #features .row.feature {
       width: 100%;
+   }
+   #features h1,
+   #features p { 
+      padding: 15px;
    }
 
 
@@ -337,7 +341,12 @@
 
    /* Footer
    ------------------------------------------------------------------- */
-   footer .right-cols .columns { padding: 0 10px; }
+   footer .right-cols .columns {
+      padding: 0 10px;
+      display: block;
+      width: 100% !important;
+      margin-bottom: 25px;
+   }
 
 }
 

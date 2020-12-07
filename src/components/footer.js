@@ -70,17 +70,7 @@ export default () => {
         </div>
 
         <p className="copyright">
-          &copy; 2014 Woo | Design by{" "}
-          <a title="Styleshout" href="http://www.styleshout.com/">
-            Styleshout
-          </a>{" "}
-          | Ported to Gatsby by{" "}
-          <a
-            href="https://github.com/desmukh/gatsby-starter-woo"
-            title="Fahad Desmukh"
-          >
-            Fahad Desmukh
-          </a>{" "}
+          &copy; 2020 Krafft Institut. All rights reserved.
         </p>
 
         <div id="go-top">
