@@ -21,8 +21,8 @@
 
    /* Call To Action Section
    ------------------------------------------------------------------- */
-   #call-to-action h2 { font: bold 26px/36px 'Montserrat', sans-serif; }
-   #call-to-action p { font-size: 16px; }
+   #call-to-action h2, #call-to-action-2 h2 { font: bold 26px/36px 'Montserrat', sans-serif; }
+   #call-to-action p, #call-to-action-2 p { font-size: 16px; }
 
 }
 
@@ -64,13 +64,14 @@
 
    /* Call To Action Section
    ------------------------------------------------------------------- */
-   #call-to-action .header-col h1:before {
+   #call-to-action .header-col h1:before,
+   #call-to-action-2 .header-col h1:before {
       font-size: 66px;
       line-height: 66px;
    }
-   #call-to-action h2 { font: bold 25px/36px 'Montserrat', sans-serif; }
-   #call-to-action .action .button { font: bold 14px/24px 'Montserrat', sans-serif; }
-   #call-to-action p { font-size: 15px; }
+   #call-to-action h2, #call-to-action-2 h2 { font: bold 25px/36px 'Montserrat', sans-serif; }
+   #call-to-action .action .button, #call-to-action-2 .action .button { font: bold 14px/24px 'Montserrat', sans-serif; }
+   #call-to-action p, #call-to-action-2 p { font-size: 15px; }
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
@@ -220,6 +221,9 @@
       float: none;
    }
    #features h3 { text-align: center; }
+   #features .row.feature {
+      width: 100%;
+   }
 
 
    /* Pricing Section
@@ -229,15 +233,15 @@
 
    /* Call To Action Section
    ----------------------------------------------------------------- */
-   #call-to-action { text-align: center; }
-   #call-to-action h1 {
+   #call-to-action, #call-to-action-2 { text-align: center; }
+   #call-to-action h1, #call-to-action-2 h1 {
       font: bold 16px/24px 'Montserrat', sans-serif;;
       text-align: center;
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
    }
-   #call-to-action h1 span { display: block; }
-   #call-to-action .header-col h1 svg { display: none; }
+   #call-to-action h1 span, #call-to-action-2 h1 span { display: block; }
+   #call-to-action .header-col h1 svg, #call-to-action-2 .header-col h1 svg { display: none; }
 
    /* Screenshots
    ------------------------------------------------------------------- */

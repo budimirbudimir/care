@@ -84,11 +84,11 @@ export default () => (
       )
     })}
 
-    <div>
+    {/* <div>
       <p style={{ textAlign: "center" }}>
         Instutute registration number: 1234567890 /// Insistute statute:{" "}
         <a href="#">Download here</a>
       </p>
-    </div>
+    </div> */}
   </section>
 )

@@ -18,21 +18,24 @@ module.exports = {
       `hero`,
       `about-us`,
       // `features`,
-      `call-to-action`,
-      // `pricing`,
+      `call-to-action-2`,
+      `partners`, // aka partners
       `testimonials`,
+      `call-to-action`,
       `screenshots`,
-      `subscribe`,
+      `contact`,
+      // `subscribe`,
     ],
 
     /* Configure the navigation menu */
     menuItems: [
       { path: "about-us", label: "About" },
       // { path: "features", label: "Features" },
-      // { path: "pricing", label: "Pricing" },
+      { path: "partners", label: "Partners" }, // aka partners
       { path: "testimonials", label: "Testimonials" },
       { path: "screenshots", label: "Screenshots" },
-      { path: "subscribe", label: "Subscribe" },
+      { path: "contact", label: "Contact" },
+      // { path: "subscribe", label: "Subscribe" },
       { path: "/demo", label: "Demo" },
     ],
 

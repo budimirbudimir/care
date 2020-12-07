@@ -5,11 +5,13 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import AboutUs from "../components/about-us"
 // import Features from "../components/features"
-// import Pricing from "../components/pricing"
+import Partners from "../components/partners"
 import CalltoAction from "../components/call-to-action"
+import CalltoAction2 from "../components/call-to-action-2"
+import Contact from "../components/contact"
 import Screenshots from "../components/screenshots"
 import Testimonials from "../components/testimonials"
-import Subscribe from "../components/subscribe"
+// import Subscribe from "../components/subscribe"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
@@ -20,10 +22,12 @@ export default () => {
     "about-us": AboutUs,
     // features: Features,
     "call-to-action": CalltoAction,
-    // pricing: Pricing,
+    partners: Partners,
     testimonials: Testimonials,
+    "call-to-action-2": CalltoAction2,
     screenshots: Screenshots,
-    subscribe: Subscribe,
+    // subscribe: Subscribe,
+    contact: Contact,
   }
 
   return (

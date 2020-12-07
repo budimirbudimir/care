@@ -1,0 +1,59 @@
+title: Our Partners
+body: During our time we have cooperated with a lot of partners. Some of them are listed below, but for more comperhensive list please get in touch with us. Thank you!
+plans:
+  -
+    title: Bronze
+    image: images/somelogo.png
+    price: Partner Name
+    per: Location, DE
+    features:
+      - We did this together
+      - And we also do this together
+      - And in future we have planned more
+      - Some like to name this
+      - And this too
+    signup:
+      label: Website
+      to: '#'
+  -
+    title: Silver
+    image: images/somelogo.png
+    price: Partner Name
+    per: Location, DE
+    features:
+      - We did this together
+      - And we also do this together
+      - And in future we have planned more
+      - Some like to name this
+      - And this too
+    signup:
+      label: Website
+      to: '#'
+  -
+    title: Gold
+    image: images/somelogo.png
+    price: Partner Name
+    per: Location, DE
+    features:
+      - We did this together
+      - And we also do this together
+      - And in future we have planned more
+      - Some like to name this
+      - And this too
+    signup:
+      label: Website
+      to: '#'
+  -
+    title: Platinum
+    image: images/somelogo.png
+    price: Partner Name
+    per: Location, DE
+    features:
+      - We did this together
+      - And we also do this together
+      - And in future we have planned more
+      - Some like to name this
+      - And this too
+    signup:
+      label: Website
+      to: '#'

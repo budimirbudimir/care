@@ -1,10 +1,10 @@
 import React from "react"
-import content from "../../content/call-to-action.yaml"
+import content from "../../content/call-to-action-2.yaml"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faUpload } from "@fortawesome/free-solid-svg-icons"
 
 export default () => (
-  <section id="call-to-action">
+  <section id="call-to-action-2">
     <div className="row">
       {/* <div className="two columns header-col">
         <h1><FontAwesomeIcon icon={faUpload} /><span>Get Hosting.</span></h1>
