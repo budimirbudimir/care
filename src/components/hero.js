@@ -41,7 +41,10 @@ export default ({ lang }) => {
             >
               {content && content.button1 ? content.button1.label : ""}
             </AnchorLink>
-            <AnchorLink className="button learn-more" to={content.button2.to}>
+            <AnchorLink
+              className="button learn-more"
+              to={content && content.button2 ? content.button2.to : ""}
+            >
               {content && content.button2 ? content.button2.label : ""}
             </AnchorLink>
           </div>
