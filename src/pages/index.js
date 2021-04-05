@@ -15,9 +15,19 @@ import Testimonials from "../components/testimonials"
 // import Subscribe from "../components/subscribe"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { IntlProvider, useIntl } from "../hooks/useIntl"
 
-export default () => {
+const AppWrapper = () => (
+  <IntlProvider>
+    <MyApp />
+  </IntlProvider>
+)
+
+const MyApp = () => {
   const { sections } = useSiteMetadata()
+
+  const { state, dispatch } = useIntl()
+
   const availableSections = {
     hero: Hero,
     "about-us": AboutUs,
@@ -31,6 +41,9 @@ export default () => {
     // subscribe: Subscribe,
     contact: Contact,
   }
+
+  const setLang = () =>
+    dispatch(state === "en" ? { type: "setDE" } : { type: "setEN" })
 
   // handle navbar changes on scroll
   useEffect(() => {
@@ -54,9 +67,10 @@ export default () => {
       <Layout>
         {sections.map(section => {
           let Tagname = availableSections[section]
-          return <Tagname />
+          return <Tagname lang={state} setLang={setLang} />
         })}
       </Layout>
     </>
   )
 }
+export default AppWrapper

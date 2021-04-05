@@ -11,8 +11,13 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons"
 
+// import { useIntl, IntlProvider } from "../hooks/useIntl"
+// import contentEN from "../../content/en/about-us.yaml"
+// import contentDE from "../../content/de/about-us.yaml"
+
 export default () => {
   const { social, footer, address, contacts } = useSiteMetadata()
+
   return (
     <footer>
       <div className="row">

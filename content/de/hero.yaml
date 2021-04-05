@@ -1,0 +1,13 @@
+headline: Krafft Institut
+
+body: Institut für Wirtschafts- und Sozialwissenschaftliche Bildung Prof. Dr. Dietmar Krafft e.V.
+
+button1:
+  label: Mehr lernen
+  to: "/#about"
+
+button2:
+  label: Kontakt Uns
+  to: "/#contact"
+
+image: images/castle.jpeg

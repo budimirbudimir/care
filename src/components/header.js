@@ -5,16 +5,22 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import NavMenu from "./navmenu"
 import HeaderSocial from "./header-social"
 
-export default () => (
-  <header>
-    <div className="logo">
-      <AnchorLink to="/#top">
-        {/* <img alt="" src={ useSiteMetadata().logo } /> */}
-        Krafft Institut
-      </AnchorLink>
-    </div>
+// import { useIntl, IntlProvider } from "../hooks/useIntl"
+// import contentEN from "../../content/en/call-to-action.yaml"
+// import contentDE from "../../content/de/call-to-action.yaml"
 
-    <NavMenu />
-    <HeaderSocial />
-  </header>
-)
+export default () => {
+  return (
+    <header>
+      <div className="logo">
+        <AnchorLink to="/#top">
+          {/* <img alt="" src={ useSiteMetadata().logo } /> */}
+          Krafft Institut
+        </AnchorLink>
+      </div>
+
+      <NavMenu />
+      <HeaderSocial />
+    </header>
+  )
+}

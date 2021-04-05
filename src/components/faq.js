@@ -8,12 +8,18 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion"
 
-import content from "../../content/faq.yaml"
+// import content from "../../content/faq.yaml"
 
 // Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css"
 
-export default function Example() {
+// import { useIntl, IntlProvider } from "../hooks/useIntl"
+import contentEN from "../../content/en/faq.yaml"
+import contentDE from "../../content/de/faq.yaml"
+
+export default ({ lang }) => {
+  const content = lang === "de" ? contentDE : contentEN
+
   return (
     <section id="faq">
       <h2 style={{ textAlign: "center", margin: "25px auto" }}>

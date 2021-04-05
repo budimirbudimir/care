@@ -1,12 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-import content from "../../content/pricing.yaml"
+// import content from "../../content/pricing.yaml"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"
 
-export default () => {
+// import { useIntl, IntlProvider } from "../hooks/useIntl"
+import contentEN from "../../content/en/pricing.yaml"
+import contentDE from "../../content/de/pricing.yaml"
+
+export default ({ lang }) => {
+  const content = lang === "de" ? contentDE : contentEN
+
   library.add(fas)
 
   return (

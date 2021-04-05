@@ -1,24 +1,31 @@
 import React from "react"
-import ScrollAnimation from "react-animate-on-scroll"
+// import ScrollAnimation from "react-animate-on-scroll"
 
-import content from "../../content/contact.yaml"
+// import content from "../../content/contact.yaml"
 
-export default () => (
-  <section id="contact">
-    <div className="row section-head">
-      <div className="twelve columns">
-        <h1>{content.title}</h1>
-        <p>{content.body}</p>
-        <h4>
-          <a href={`mailto:${content.email}`}>{content.email}</a>
-        </h4>
+// import { useIntl, IntlProvider } from "../hooks/useIntl"
+import contentEN from "../../content/en/contact.yaml"
+import contentDE from "../../content/de/contact.yaml"
+
+export default ({ lang }) => {
+  const content = lang === "de" ? contentDE : contentEN
+
+  return (
+    <section id="contact">
+      <div className="row section-head">
+        <div className="twelve columns">
+          <h1>{content.title}</h1>
+          <p>{content.body}</p>
+          <h4>
+            <a href={`mailto:${content.email}`}>{content.email}</a>
+          </h4>
+        </div>
       </div>
-    </div>
 
-    {/* <div className="row">
+      {/* <div className="row">
       <div className="twelve columns">
         <div id="mc_embed_signup"> */}
-    {/* <form
+      {/* <form
             action="http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d"
             method="post"
             id="mc-embedded-subscribe-form"
@@ -27,7 +34,7 @@ export default () => (
             target="_blank"
             noValidate
           > */}
-    {/* <ScrollAnimation animateIn="fadeInLeftBig" animateOnce={true}>
+      {/* <ScrollAnimation animateIn="fadeInLeftBig" animateOnce={true}>
               <input
                 type="email"
                 defaultValue=""
@@ -38,8 +45,8 @@ export default () => (
                 required
               />
             </ScrollAnimation> */}
-    {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
-    {/* <div style={{ position: "absolute", left: "-5000px" }}>
+      {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+      {/* <div style={{ position: "absolute", left: "-5000px" }}>
               <input
                 type="text"
                 name="b_cdb7b577e41181934ed6a6a44_e65110b38d"
@@ -57,13 +64,14 @@ export default () => (
                 />
               </ScrollAnimation>
             </div> */}
-    {/* </form> */}
-    {/* </div> */}
+      {/* </form> */}
+      {/* </div> */}
 
-    <p>
-      <small>{content.small}</small>
-    </p>
-    {/* </div> */}
-    {/* </div> */}
-  </section>
-)
+      <p>
+        <small>{content.small}</small>
+      </p>
+      {/* </div> */}
+      {/* </div> */}
+    </section>
+  )
+}

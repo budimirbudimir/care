@@ -38,6 +38,8 @@ module.exports = {
       { path: "faq", label: "FAQ" },
       { path: "contact", label: "Contact" },
       // { path: "subscribe", label: "Subscribe" },
+
+      // NOTE This is where we can enforce app to hard-open the page
       { path: "/demo", label: "Demo" },
     ],
 
