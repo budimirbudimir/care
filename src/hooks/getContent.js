@@ -106,7 +106,7 @@ const intl_map = {
 }
 
 const getContent = (section, lang) => {
-  //   console.log({ map: intl_map[lang] })
+  console.log({ map: intl_map[lang], lang, section })
   return intl_map[lang][section]
 }
 

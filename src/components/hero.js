@@ -3,9 +3,9 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import content from "../../content/hero.yaml"
 
 // import { IntlProvider, useIntl } from "../hooks/useIntl"
-import contentEN from "../../content/en/hero.yaml"
-import contentDE from "../../content/de/hero.yaml"
-import contentAL from "../../content/al/hero.yaml"
+// import contentEN from "../../content/en/hero.yaml"
+// import contentDE from "../../content/de/hero.yaml"
+// import contentAL from "../../content/al/hero.yaml"
 import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
