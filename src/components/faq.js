@@ -28,7 +28,7 @@ export default ({ lang }) => {
         Frequently Asked Questions (FAQ)
       </h2>
       <Accordion>
-        {content.map((item, index) => (
+        {content.questions.map((item, index) => (
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>{item.question}</AccordionItemButton>

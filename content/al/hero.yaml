@@ -1,13 +1,9 @@
 headline: Krafft Institute
-
 body: Institut für Wirtschafts- und Sozialwissenschaftliche Bildung Prof. Dr. Dietmar Krafft e.V.
-
 button1:
   label: Mëso më shumë
   to: "/#about"
-
 button2:
   label: Na kontaktoni
   to: "/#contact"
-
 image: images/castle.jpeg

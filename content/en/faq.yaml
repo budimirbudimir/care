@@ -1,8 +1,14 @@
-- question: Who are we?
-  answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
-- question: How can we help?
-  answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
-- question: I have a problem and don't know where to start?
-  answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
-- question: Do you qualify for our programme?
-  answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
+# prettier-ignore
+questions:
+  - 
+    question: Who are we?
+    answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
+  - 
+    question: How can we help?
+    answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
+  - 
+    question: I have a problem and don't know where to start?
+    answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
+  - 
+    question: Do you qualify for our programme?
+    answer: Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further. Contact us and find out. We have many programs that may suit you, and we may even help you improve and specialize further.
