@@ -20,13 +20,15 @@ export default ({ lang }) => {
         {/* <div className="twelve columns"> */}
         <div>
           <div className="hero-text">
-            <h1 className="responsive-headline">{content.headline || ""}</h1>
-            <p>{content.body || ""}</p>
+            <h1 className="responsive-headline">
+              {content ? content.headline : ""}
+            </h1>
+            <p>{content ? content.body : ""}</p>
           </div>
 
           <div className="hero-image">
             <img
-              src={content.image || ""}
+              src={content ? content.image : ""}
               alt=""
               className="animated fadeInUpBig"
             />
@@ -35,12 +37,12 @@ export default ({ lang }) => {
           <div className="buttons" style={{ paddingTop: "40px" }}>
             <AnchorLink
               className="button trial animated shake"
-              to={content.button1.to || ""}
+              to={content && content.button1 ? content.button1.to : ""}
             >
-              {content.button1.label || ""}
+              {content && content.button1 ? content.button1.label : ""}
             </AnchorLink>
             <AnchorLink className="button learn-more" to={content.button2.to}>
-              {content.button2.label || ""}
+              {content && content.button2 ? content.button2.label : ""}
             </AnchorLink>
           </div>
         </div>
