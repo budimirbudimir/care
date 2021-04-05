@@ -9,7 +9,7 @@ import HeaderSocial from "./header-social"
 // import contentEN from "../../content/en/call-to-action.yaml"
 // import contentDE from "../../content/de/call-to-action.yaml"
 
-export default () => {
+export default ({ lang, setLang }) => {
   return (
     <header>
       <div className="logo">
@@ -20,7 +20,7 @@ export default () => {
       </div>
 
       <NavMenu />
-      <HeaderSocial />
+      <HeaderSocial lang={lang} setLang={setLang} />
     </header>
   )
 }

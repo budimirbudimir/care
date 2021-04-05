@@ -12,36 +12,36 @@ import "../styles/media-queries.css"
 import "../styles/animate.css"
 import "../styles/prettyPhoto.css"
 
-import 'typeface-open-sans';
-import 'typeface-montserrat';
+import "typeface-open-sans"
+import "typeface-montserrat"
 
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 config.autoAddCss = false
 
-export default function Layout ({ children }){
-
+export default function Layout({ children, lang, setLang }) {
   const { title, description, author, favicon } = useSiteMetadata()
 
-  return(
+  return (
     <>
-    <Helmet>
-      <title>{ title }</title>
-      <meta name="description" content={ description } />
-      <meta name="author" content={ author.name } />
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="author" content={author.name} />
 
-    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
 
-      <link rel="shortcut icon" href={'/' + favicon } type="image/png" />
-    </Helmet>
+        <link rel="shortcut icon" href={"/" + favicon} type="image/png" />
+      </Helmet>
 
-    <Header />
+      <Header lang={lang} setLang={setLang} />
 
-  <main id="top">
-    {children}
-  </main>
+      <main id="top">{children}</main>
 
-  <Footer />
-  </>
+      <Footer />
+    </>
   )
 }

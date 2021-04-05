@@ -64,7 +64,7 @@ const MyApp = () => {
 
   return (
     <>
-      <Layout>
+      <Layout lang={state} setLang={setLang}>
         {sections.map(section => {
           let Tagname = availableSections[section]
           return <Tagname lang={state} setLang={setLang} />

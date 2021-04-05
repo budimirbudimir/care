@@ -23,9 +23,7 @@ export default ({ lang, setLang }) => {
           </a>
         </li>
       ))}
-      <li onClick={() => setLang(state === "en" ? "setDE" : "setEN")}>
-        {lang}
-      </li>
+      <li onClick={() => setLang(lang === "en" ? "setDE" : "setEN")}>{lang}</li>
     </ul>
   )
 }
