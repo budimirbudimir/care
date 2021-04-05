@@ -106,6 +106,7 @@ const intl_map = {
 }
 
 const getContent = (section, lang) => {
+  if (!intl_map || !intl_map[lang] || !intl_map[lang][section]) return null
   console.log({ map: intl_map[lang][section], lang, section })
   return intl_map[lang][section]
 }
