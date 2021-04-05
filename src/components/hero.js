@@ -5,9 +5,11 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { IntlProvider, useIntl } from "../hooks/useIntl"
 import contentEN from "../../content/en/hero.yaml"
 import contentDE from "../../content/de/hero.yaml"
+import contentAL from "../../content/al/hero.yaml"
+import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
-  const content = lang === "de" ? contentDE : contentEN
+  const content = getContent("hero", lang)
 
   return (
     <section id="hero" style={{ paddingTop: "27px" }}>

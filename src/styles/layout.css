@@ -109,6 +109,15 @@ header .header-social li {
   display: inline-block;
   margin-right: 20px;
 }
+header .header-social li img {
+  width: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+header .header-social li a svg {
+  vertical-align: middle;
+}
+
 header .header-social li a {
   color: #fff;
 }

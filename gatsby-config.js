@@ -55,11 +55,6 @@ module.exports = {
         url: `https://twitter.com/styleshout`,
         fa: `twitter`,
       },
-      {
-        service: `GitHub`,
-        url: `https://github.com/desmukh/gatsby-starter-woo`,
-        fa: `github`,
-      },
     ],
 
     /* Path to favicon and logo (located inside the 'static' folder) */

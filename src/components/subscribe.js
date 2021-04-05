@@ -4,11 +4,13 @@ import ScrollAnimation from "react-animate-on-scroll"
 // import content from '../../content/subscribe.yaml'
 
 // import { IntlProvider, useIntl } from "../hooks/useIntl"
-import contentEN from "../../content/en/subscribe.yaml"
-import contentDE from "../../content/de/subscribe.yaml"
+// import contentEN from "../../content/en/subscribe.yaml"
+// import contentDE from "../../content/de/subscribe.yaml"
+// import contentAL from "../../content/al/subscribe.yaml"
+import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
-  const content = lang === "de" ? contentDE : contentEN
+  const content = getContent("subscribe", lang)
 
   return (
     <section id="subscribe">

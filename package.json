@@ -31,6 +31,7 @@
     "react-image-lightbox": "^5.1.1",
     "react-scrollspy": "^3.4.2",
     "react-slick": "^0.25.2",
+    "react-world-flags": "^1.4.0",
     "slick-carousel": "^1.8.1",
     "typeface-montserrat": "0.0.75",
     "typeface-open-sans": "0.0.75"

@@ -42,8 +42,7 @@ const MyApp = () => {
     contact: Contact,
   }
 
-  const setLang = () =>
-    dispatch(state === "en" ? { type: "setDE" } : { type: "setEN" })
+  const setLang = lang => dispatch({ type: lang })
 
   // handle navbar changes on scroll
   useEffect(() => {

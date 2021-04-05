@@ -4,11 +4,13 @@ import React from "react"
 // import { faUpload } from "@fortawesome/free-solid-svg-icons"
 
 // import { useIntl, IntlProvider } from "../hooks/useIntl"
-import contentEN from "../../content/en/call-to-action-2.yaml"
-import contentDE from "../../content/de/call-to-action-2.yaml"
+// import contentEN from "../../content/en/call-to-action-2.yaml"
+// import contentDE from "../../content/de/call-to-action-2.yaml"
+// import contentAL from "../../content/al/call-to-action-2.yaml"
+import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
-  const content = lang === "de" ? contentDE : contentEN
+  const content = getContent("call-to-action-2", lang)
 
   return (
     <section id="call-to-action-2">

@@ -12,6 +12,10 @@ function intlReducer(state, action) {
       return "de"
     }
 
+    case "setAL": {
+      return "al"
+    }
+
     default: {
       throw new Error(`Unhandled action type: ${action.type}`)
     }

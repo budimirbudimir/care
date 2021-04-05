@@ -6,11 +6,10 @@ import { faQuoteRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons"
 // import content from '../../content/testimonials.yaml'
 
 // import { useIntl, IntlProvider } from "../hooks/useIntl"
-import contentEN from "../../content/en/testimonials.yaml"
-import contentDE from "../../content/de/testimonials.yaml"
+import getContent from "../hooks/getContent"
 
 const MySlider = ({ lang }) => {
-  const content = lang === "de" ? contentDE : contentEN
+  const content = getContent("testimonials", lang)
 
   const settings = {
     dots: true,

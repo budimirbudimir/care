@@ -4,11 +4,13 @@ import React from "react"
 // import content from "../../content/contact.yaml"
 
 // import { useIntl, IntlProvider } from "../hooks/useIntl"
-import contentEN from "../../content/en/contact.yaml"
-import contentDE from "../../content/de/contact.yaml"
+// import contentEN from "../../content/en/contact.yaml"
+// import contentDE from "../../content/de/contact.yaml"
+// import contentAL from "../../content/al/contact.yaml"
+import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
-  const content = lang === "de" ? contentDE : contentEN
+  const content = getContent("contact", lang)
 
   return (
     <section id="contact">

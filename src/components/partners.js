@@ -7,11 +7,13 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"
 
 // import { useIntl, IntlProvider } from "../hooks/useIntl"
-import contentEN from "../../content/en/partners.yaml"
-import contentDE from "../../content/de/partners.yaml"
+// import contentEN from "../../content/en/partners.yaml"
+// import contentDE from "../../content/de/partners.yaml"
+// import contentAL from "../../content/al/partners.yaml"
+import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
-  const content = lang === "de" ? contentDE : contentEN
+  const content = getContent("partners", lang)
 
   library.add(fas)
 

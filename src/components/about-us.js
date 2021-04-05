@@ -2,11 +2,13 @@ import React from "react"
 import ScrollAnimation from "react-animate-on-scroll"
 
 // import { useIntl, IntlProvider } from "../hooks/useIntl"
-import contentEN from "../../content/en/about-us.yaml"
-import contentDE from "../../content/de/about-us.yaml"
+// import contentEN from "../../content/en/about-us.yaml"
+// import contentDE from "../../content/de/about-us.yaml"
+// import contentAL from "../../content/al/about-us.yaml"
+import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
-  const content = lang === "de" ? contentDE : contentEN
+  const content = getContent("about-us", lang)
 
   return (
     <section id="features">

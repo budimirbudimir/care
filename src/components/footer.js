@@ -14,8 +14,10 @@ import {
 // import { useIntl, IntlProvider } from "../hooks/useIntl"
 // import contentEN from "../../content/en/about-us.yaml"
 // import contentDE from "../../content/de/about-us.yaml"
+// import getContent from "../hooks/getContent"
 
 export default () => {
+  // const content = getContent("footer", lang)
   const { social, footer, address, contacts } = useSiteMetadata()
 
   return (
