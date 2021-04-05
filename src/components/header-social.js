@@ -4,7 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-import { useIntl, IntlProvider } from "../hooks/useIntl"
+// import { useIntl, IntlProvider } from "../hooks/useIntl"
 import contentEN from "../../content/en/about-us.yaml"
 import contentDE from "../../content/de/about-us.yaml"
 
@@ -24,7 +24,7 @@ export default ({ lang, setLang }) => {
         </li>
       ))}
       <li onClick={() => setLang(state === "en" ? "setDE" : "setEN")}>
-        {state}
+        {lang}
       </li>
     </ul>
   )
