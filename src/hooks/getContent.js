@@ -54,60 +54,58 @@ import testimonials_EN from "../../content/en/testimonials.yaml"
 import testimonials_DE from "../../content/de/testimonials.yaml"
 import testimonials_AL from "../../content/al/testimonials.yaml"
 
-const intl_map = {
-  al: {
-    "about-us": about_us_AL,
-    "call-to-action": call_to_action_AL,
-    "call-to-action-2": call_to_action_2_AL,
-    contact: contact_AL,
-    faq: faq_AL,
-    features: features_AL,
-    // footer: footer_AL,
-    // "header-social": header_social_AL,
-    // header: header_AL,
-    hero: hero_AL,
-    partners: partners_AL,
-    pricing: pricing_AL,
-    subscribe: subscribe_AL,
-    testimonials: testimonials_AL,
-  },
-  de: {
-    "about-us": about_us_DE,
-    "call-to-action": call_to_action_DE,
-    "call-to-action-2": call_to_action_2_DE,
-    contact: contact_DE,
-    faq: faq_DE,
-    features: features_DE,
-    // footer: footer_DE,
-    // "header-social": header_social_DE,
-    // header: header_DE,
-    hero: hero_DE,
-    partners: partners_DE,
-    pricing: pricing_DE,
-    subscribe: subscribe_DE,
-    testimonials: testimonials_DE,
-  },
-  en: {
-    "about-us": about_us_EN,
-    "call-to-action": call_to_action_EN,
-    "call-to-action-2": call_to_action_2_EN,
-    contact: contact_EN,
-    faq: faq_EN,
-    features: features_EN,
-    // footer: footer_EN,
-    // "header-social": header_social_EN,
-    // header: header_EN,
-    hero: hero_EN,
-    partners: partners_EN,
-    pricing: pricing_EN,
-    subscribe: subscribe_EN,
-    testimonials: testimonials_EN,
-  },
-}
-
 const getContent = (section, lang) => {
-  if (!intl_map || !intl_map[lang] || !intl_map[lang][section]) return null
-  console.log({ map: intl_map[lang][section], lang, section })
+  const intl_map = {
+    al: {
+      "about-us": about_us_AL,
+      "call-to-action": call_to_action_AL,
+      "call-to-action-2": call_to_action_2_AL,
+      contact: contact_AL,
+      faq: faq_AL,
+      features: features_AL,
+      // footer: footer_AL,
+      // "header-social": header_social_AL,
+      // header: header_AL,
+      hero: hero_AL,
+      partners: partners_AL,
+      pricing: pricing_AL,
+      subscribe: subscribe_AL,
+      testimonials: testimonials_AL,
+    },
+    de: {
+      "about-us": about_us_DE,
+      "call-to-action": call_to_action_DE,
+      "call-to-action-2": call_to_action_2_DE,
+      contact: contact_DE,
+      faq: faq_DE,
+      features: features_DE,
+      // footer: footer_DE,
+      // "header-social": header_social_DE,
+      // header: header_DE,
+      hero: hero_DE,
+      partners: partners_DE,
+      pricing: pricing_DE,
+      subscribe: subscribe_DE,
+      testimonials: testimonials_DE,
+    },
+    en: {
+      "about-us": about_us_EN,
+      "call-to-action": call_to_action_EN,
+      "call-to-action-2": call_to_action_2_EN,
+      contact: contact_EN,
+      faq: faq_EN,
+      features: features_EN,
+      // footer: footer_EN,
+      // "header-social": header_social_EN,
+      // header: header_EN,
+      hero: hero_EN,
+      partners: partners_EN,
+      pricing: pricing_EN,
+      subscribe: subscribe_EN,
+      testimonials: testimonials_EN,
+    },
+  }
+
   return intl_map[lang][section]
 }
 

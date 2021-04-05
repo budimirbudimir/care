@@ -330,38 +330,45 @@ ul.nav li.current button {
 /* d. Features Section
 /* ------------------------------------------------------------------ */
 
-#features {
+#features,
+#about-us {
   background: #fff;
   padding: 60px 30px;
   overflow: hidden;
 }
-#features > hr {
+#features > hr,
+#about-us > hr {
   margin: 70px auto 60px;
   width: 90%;
 }
-#features .feature {
+#features .feature,
+#about-us .feature {
   margin-top: 30px;
   margin-bottom: 54px;
 }
-#features .row.feature {
+#features .row.feature,
+#about-us .row.feature {
   width: 25%;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
 }
-#features .right {
+#features .right,
+#about-us .right {
   padding: 10px;
   float: none;
   display: block;
   width: auto;
 }
-#features .left {
+#features .left,
+#about-us .left {
   padding: 10px;
   float: none;
   display: block;
   width: auto;
 }
-#features h3 {
+#features h3,
+#about-us h3 {
   font: bold 16px/24px "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
