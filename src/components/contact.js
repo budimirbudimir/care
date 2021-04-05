@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 import content from "../../content/contact.yaml"
 
 export default () => (
-  <section id="subscribe">
+  <section id="contact">
     <div className="row section-head">
       <div className="twelve columns">
         <h1>{content.title}</h1>

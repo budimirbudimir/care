@@ -22,7 +22,8 @@ module.exports = {
       `partners`, // aka partners
       `testimonials`,
       `call-to-action`,
-      `screenshots`,
+      // `screenshots`,
+      `faq`,
       `contact`,
       // `subscribe`,
     ],
@@ -33,7 +34,8 @@ module.exports = {
       // { path: "features", label: "Features" },
       { path: "partners", label: "Partners" }, // aka partners
       { path: "testimonials", label: "Testimonials" },
-      { path: "screenshots", label: "Screenshots" },
+      // { path: "screenshots", label: "Screenshots" },
+      { path: "faq", label: "FAQ" },
       { path: "contact", label: "Contact" },
       // { path: "subscribe", label: "Subscribe" },
       { path: "/demo", label: "Demo" },

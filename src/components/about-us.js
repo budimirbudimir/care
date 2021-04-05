@@ -4,7 +4,7 @@ import content from "../../content/about-us.yaml"
 
 export default () => (
   <section id="features">
-    <h1>About Us</h1>
+    <h1 style={{ textAlign: "center" }}>Who we are</h1>
 
     <p>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -24,12 +24,8 @@ export default () => (
       voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
       ipsa quae ab illo.
     </p>
-    <p>
-      nventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-      fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-      sequi nesciunt.
-    </p>
+
+    <hr />
 
     {content.map((value, index) => {
       let pos, imagepos

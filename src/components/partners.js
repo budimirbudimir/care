@@ -10,7 +10,7 @@ export default () => {
   library.add(fas)
 
   return (
-    <section id="pricing">
+    <section id="partners">
       <div className="row section-head">
         <h1>{content.title}</h1>
         <p>{content.body}</p>
