@@ -3,15 +3,15 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import content from "../../content/hero.yaml"
 
 // import { IntlProvider, useIntl } from "../hooks/useIntl"
-// import contentEN from "../../content/en/hero.yaml"
-// import contentDE from "../../content/de/hero.yaml"
-// import contentAL from "../../content/al/hero.yaml"
-import getContent from "../hooks/getContent"
+import contentEN from "../../content/en/hero.yaml"
+import contentDE from "../../content/de/hero.yaml"
+import contentAL from "../../content/al/hero.yaml"
+// import getContent from "../hooks/getContent"
 
 export default ({ lang }) => {
-  const content = getContent("hero", lang)
-  // const map = { en: contentEN, de: contentDE, al: contentAL }
-  // const content = map[lang]
+  // const content = getContent("hero", lang)
+  const map = { en: contentEN, de: contentDE, al: contentAL }
+  const content = map[lang]
 
   return (
     <section id="hero" style={{ paddingTop: "27px" }}>
