@@ -11,7 +11,7 @@ export default ({ lang }) => {
   const content = getContent("about-us", lang)
 
   return (
-    <section id="features">
+    <section id="about-us">
       <h1 style={{ textAlign: "center" }}>Who we are</h1>
 
       <p>

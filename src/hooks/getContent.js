@@ -105,6 +105,9 @@ const intl_map = {
   },
 }
 
-export default (section, lang) => {
+const getContent = (section, lang) => {
+  //   console.log({ map: intl_map[lang] })
   return intl_map[lang][section]
 }
+
+export default getContent
