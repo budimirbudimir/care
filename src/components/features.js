@@ -2,7 +2,7 @@ import React from "react"
 import ScrollAnimation from "react-animate-on-scroll"
 // import content from "../../content/features.yaml"
 
-import { useIntl, IntlProvider } from "../hooks/useIntl"
+// import { useIntl, IntlProvider } from "../hooks/useIntl"
 import contentEN from "../../content/en/features.yaml"
 import contentDE from "../../content/de/features.yaml"
 
