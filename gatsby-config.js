@@ -40,7 +40,7 @@ module.exports = {
       // { path: "subscribe", label: "Subscribe" },
 
       // NOTE This is where we can enforce app to hard-open the page
-      { path: "/demo", label: "Demo" },
+      // { path: "/demo", label: "Demo" },
     ],
 
     /* Provide social media accounts. Remove or add new services. (The value 'fa' is the name of FontAwesome icon to display. Choose from here: https://fontawesome.com/cheatsheet/free/brands ) */
